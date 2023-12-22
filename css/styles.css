@@ -546,6 +546,35 @@ img.icon-tec:hover{
     margin-bottom: 20px;
 }
 
+#projetos #pj1, #projetos #pj2, #projetos #pj3, #projetos #pj4, #projetos #pj5, #projetos #pj6{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: transform 0.3s ease;
+}
+
+#projetos #pj1{
+    background-image: url(../img/orcamento.png);
+}
+
+#projetos #pj2{
+    background-image: url(../img/cardapio.png);
+}
+
+#projetos #pj3{
+    background-image: url(../img/iphone.png);
+}
+
+#projetos #pj4{
+    background-image: url(../img/xmen.png);
+}
+
+#projetos #pj1:hover, #projetos #pj2:hover, #projetos #pj3:hover, #projetos #pj4:hover, #projetos #pj5:hover, #projetos #pj6:hover{
+    transform: scale(1.1);
+}
+
+
 .btn-acesso{
     width: 100%;
     display: flex;
@@ -558,6 +587,8 @@ img.icon-tec:hover{
    margin: 10px;
     
 }
+
+
 
 
 
@@ -1206,6 +1237,11 @@ ul#rodape-items li a:hover {
 
 
 @media(max-width: 439px){
+
+    #inicio .coluna1{ 
+        margin-top: 20px;
+    }
+    
 
     #sobreMim #sobreMim-icons .fa-instagram, #sobreMim #sobreMim-icons .fa-github-alt{
         font-size: 20px;
