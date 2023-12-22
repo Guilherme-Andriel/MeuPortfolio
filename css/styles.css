@@ -1239,7 +1239,7 @@ ul#rodape-items li a:hover {
 @media(max-width: 439px){
 
     #inicio .coluna1{ 
-        margin-top: 20px;
+        margin-top: 0px;
     }
     
 
