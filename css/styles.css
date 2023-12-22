@@ -469,7 +469,7 @@ img.icon-tec:hover{
 }
 
 
-#projetos .coluna4{
+ .coluna4{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -593,14 +593,7 @@ textarea{
     height: 550px;
 } 
 
-#contato .coluna6{
-    width: 100%;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 
@@ -705,7 +698,7 @@ ul#rodape-items li a:hover {
 @media(max-width: 1172px){
     
 
-    .coluna6{
+    .coluna4{
         margin: 40px;
     }
 }
@@ -805,11 +798,11 @@ ul#rodape-items li a:hover {
     /* Contato */
 
 
-    #contato .coluna6{
+    #contato .coluna4{
         width: 400px;
 
     }
-    #contato .coluna6  #contato-form{
+    #contato .coluna4  #contato-form{
         width: 1000px; 
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
@@ -919,7 +912,7 @@ ul#rodape-items li a:hover {
         font-size: 1.5rem;
     }
 
-    #inicio .inicial-grid .coluna1 .paragrafo{
+    #inicio .inicial-grid .coluna1 p.paragrafo, #habilidades p.paragrafo, #sobreMim p.paragrafo{
         font-size: 1.1rem;
     }
 
@@ -971,11 +964,7 @@ ul#rodape-items li a:hover {
        
     }
 
-    .paragrafo{
-       
-        font-size: 1.1rem;
-       
-    }
+   
 
 
     /* Projetos */
@@ -997,16 +986,16 @@ ul#rodape-items li a:hover {
     
     /* Contato */
 
-    #contato .coluna6{
+    #contato .coluna4{
         width: 400px;
 
     }
-    #contato .coluna6  #contato-form{
+    #contato .coluna4  #contato-form{
         width: 440px;
 
     }
 
-    #contato .coluna6  #contato-form .form .input{
+    #contato .coluna4  #contato-form .form .input{
     min-width: 340px;
         
     }
@@ -1024,16 +1013,28 @@ ul#rodape-items li a:hover {
 
     header#cabecalho{
         
-        height: 75px;
-        
-       
+        height: 70px;
     }
-
 
 
     #logo{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
+
+    /* Switch */
+
+
+  
+  #switch button {
+    width: 26px;
+    height: 26px;
+  }
+
+  
+  #switch span {
+    width: 54px;
+    height: 17px;
+  }
 
     /* Inicial */
 
@@ -1042,7 +1043,7 @@ ul#rodape-items li a:hover {
     }
 
     #inicio .inicial-grid .coluna1 #nome{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     #inicio .inicial-grid .coluna1 #profissional{
@@ -1051,6 +1052,20 @@ ul#rodape-items li a:hover {
 
     #inicio .inicial-grid .coluna1 #profissional span{
         font-size: 1.3rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    #inicio .inicial-grid .coluna1 p.paragrafo, #habilidades p.paragrafo, #sobreMim p.paragrafo{
+        font-size: 0.9rem;
+    }
+
+
+
+    footer#rodape #copy{
+        font-size: 0.8rem;
     }
 
 
@@ -1101,17 +1116,15 @@ ul#rodape-items li a:hover {
 
     /* Contato */
 
-    #contato .coluna6{
+    #contato .coluna4{
         margin: 0px;
     }
-    #contato .coluna6  #contato-form .form .input{
+    #contato .coluna4  #contato-form .form .input{
         min-width: 300px;
             
         }
 
-        .title{
-            font-size: 1.5rem;
-        }
+       
 
 }
 
@@ -1151,6 +1164,32 @@ ul#rodape-items li a:hover {
         
         justify-items: center;
         justify-content: center;
+    }
+    
+ 
+
+
+    /* Contato */
+
+    #contato .coluna4{
+        width: 300px;
+
+    }
+    #contato .coluna4  #contato-form{
+        width: 340px;
+      
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        
+        justify-items: center;
+        justify-content: center;
+
+    }
+
+    #contato .coluna4  #contato-form .form .input{
+    min-width: 300px;
+        
     }
    
 
