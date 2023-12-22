@@ -222,7 +222,10 @@ header#cabecalho #navbar{
 .paragrafo{
     margin: 2rem 0 2rem 0;
     font-size: 1.2rem;
-    align-items: justify;
+}
+
+#inicio .inicial-grid .coluna1 p.paragrafo, #habilidades p.paragrafo, #sobreMim p.paragrafo{
+    text-align: justify;
 }
 
 .btn{
@@ -317,10 +320,12 @@ header#cabecalho #navbar{
 /* Sessão SOBRE MIM */
 
 #sobreMim{
+    height: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    align-items: center;
    
 }
 
@@ -330,10 +335,11 @@ header#cabecalho #navbar{
 }
 
 .coluna3{
-   
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -343,24 +349,62 @@ header#cabecalho #navbar{
 
 }
 
+#sobreMim .container{
+    margin: 5rem auto;
+}
+
 .caixa-sobreMim{
     background: var(--surface-color);
 
     border-radius: 8px; 
 
-    height: 80vh;
-    min-width: 300px;
+    
+    max-width: 60vw;
+    min-width: 60vw;
     
     
     border-radius: 70px;
-    padding: 30px;
+    padding: 4rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
     text-align: justify;
+    
 }
 
 #sobreMim .paragrafo{
     min-width: 250px;
    
+}
+
+#sobreMim #sobreMim-icons{
+    width: 100%;
+    display: flex;
+    
+    gap: 30px;
+}
+
+
+#sobreMim #sobreMim-icons .fa-instagram, #sobreMim #sobreMim-icons .fa-github-alt{
+   font-size: 30px;
+}
+
+#sobreMim #sobreMim-icons a:hover {
+    outline: 5px solid var(--highlight-color);
+    border-radius: 50%;
+    background-color:  var(--highlight-color);
+
+  }
+
+#sobreMim #sobreMim-icons a{ 
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--destaque);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 
 
@@ -1060,6 +1104,7 @@ ul#rodape-items li a:hover {
 
     #inicio .inicial-grid .coluna1 p.paragrafo, #habilidades p.paragrafo, #sobreMim p.paragrafo{
         font-size: 0.9rem;
+        line-height: 1.7;
     }
 
 
@@ -1098,6 +1143,8 @@ ul#rodape-items li a:hover {
         
     }
 
+  
+
     /* Habilidades */
 
     #habilidades #tecnologias .icon-tec{
@@ -1128,9 +1175,56 @@ ul#rodape-items li a:hover {
 
 }
 
+@media(max-width: 953px){
+
+    .caixa-sobreMim{
+        
+        max-width: 80vh;
+        min-width: 300px;
+        padding: 3rem;
+
+    }
+
+    #sobreMim #sobreMim-icons .fa-instagram, #sobreMim #sobreMim-icons .fa-github-alt{
+        font-size: 25px;
+     }
+     
+    
+     
+     #sobreMim #sobreMim-icons a{ 
+     
+         width: 50px;
+         height: 50px;
+       
+       
+     }
+     
+}
+
+
+
 
 
 @media(max-width: 439px){
+
+    #sobreMim #sobreMim-icons .fa-instagram, #sobreMim #sobreMim-icons .fa-github-alt{
+        font-size: 20px;
+     }
+
+     #sobreMim #sobreMim-icons{
+        justify-content: center;
+     }
+     
+    
+     
+     #sobreMim #sobreMim-icons a{ 
+     
+         width: 40px;
+         height: 40px;
+       
+     }
+
+   
 
 
     #habilidades #tecnologias{
@@ -1147,8 +1241,6 @@ ul#rodape-items li a:hover {
     #habilidades .coluna1, #habilidades .coluna2{
         width: 300px;
     }
-
-   
 
     
      #projetos .coluna4{
@@ -1197,4 +1289,30 @@ ul#rodape-items li a:hover {
 
    
   
+}
+
+
+
+@media (min-width: 471px) and (max-width: 1129px){
+    #inicio .inicial-grid .caixa-img{
+   
+        width: 300px;
+        height: 300px;   
+       
+    }
+}
+
+@media (min-width: 471px) and (max-width: 1439px){
+    
+    #habilidades .title{
+        margin: 2rem;
+        
+    }
+
+    #habilidades #tecnologias .icon-tec{
+        width: 60px;
+        height: 60px;
+
+       
+    }
 }
