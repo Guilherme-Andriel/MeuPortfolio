@@ -1092,9 +1092,6 @@ ul#rodape-items li a:hover {
        
     }
 
-   
-
-
     /* Projetos */
 
     #projetos #meus-projetos .projeto{
@@ -1138,8 +1135,26 @@ ul#rodape-items li a:hover {
         width: 300px;
     }
 
+   
 
+    
+     #projetos .coluna4{
+        width: 100%;
 
+    }
+
+    #projetos #meus-projetos{
+        width: 340px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        
+        justify-items: center;
+        justify-content: center;
+    }
+   
+
+  
 
    
   
