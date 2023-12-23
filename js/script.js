@@ -25,9 +25,11 @@ function descricaoProjeto(descricao){
     console.log(descricao)
     let container = document.createElement("div")
     container.classList.add("container-janela")
+    
 
     let janela = document.createElement("div")
     janela.classList.add("janela")
+
 
     let close = document.createElement("button")
     close.classList.add("closeButton")
@@ -44,8 +46,13 @@ function descricaoProjeto(descricao){
 
     document.body.appendChild(container);
 
+    setTimeout(() => {
+        janela.classList.add("mostrar");
+    }, 100);
+
     let dVoltar = janela.querySelector(".closeButton");
     dVoltar.addEventListener("click", () => {
+        
         janela.remove();
         container.remove();
     });
