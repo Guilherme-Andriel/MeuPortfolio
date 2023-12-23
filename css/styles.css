@@ -7,7 +7,7 @@
 
 :root {
     --color-padrao: #fff;
-    --bg-url: url(../img/bg-desktop.jpg);
+    --bg-url: url(../img/bg-mobile.jpg);
     --stroke-color: rgba(255, 255, 255, 0.50);
     --surface-color: rgba(255, 255, 255, 0.1);
     --surface-color-hover: rgba(255, 255, 255, 0.5);
@@ -22,6 +22,8 @@
     --preto3: #262626;
     --preto4:#262626;
     --destaque: #787878;
+    --janela: #2d2d2d;
+
     --roxo: #ad7ed6;
     --roxo2: #c7a1e9;
     --gradient:  linear-gradient(315deg, #d71fef, #0083f5);
@@ -29,7 +31,7 @@
   
   .light {
     --color-padrao: black;
-    --bg-url: url(../img/bg-desktop-light.jpg);
+    --bg-url: url(../img/bg-mobile-light.jpg);
     --stroke-color: rgba(0, 0, 0, 0.50);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -45,6 +47,7 @@
     --preto3: #e1e1e6;
     --preto4:#201f1f;
     --destaque: #9c9999;
+    --janela: #fafafa;
     
     --roxo: #ad7ed6;
     --roxo2: #c7a1e9;
@@ -157,7 +160,7 @@ header#cabecalho #navbar{
     width: 64px;
   }
   
-  #switch button {
+  #switch button.switch-button{
     width: 32px;
     height: 32px;
     background: var(--color-switch) var(--switch-bg-url) no-repeat center;
@@ -168,18 +171,16 @@ header#cabecalho #navbar{
     top: 50%;
     left: 0;
     z-index: 1;
+    cursor: pointer;
   
-    transform: translateY(-50%);
-  
-    animation: slide-back .4s;
-  
+    transform: translateY(-50%) translateX(0px);
+    transition: transform 0.3s ease;
+   
   }
+
+
   
-  .light #switch button {
-    animation: slide-in 0.4s forwards;
-  }
-  
-  #switch button:hover {
+  #switch button.switch-button:hover {
     outline: 8px solid var(--highlight-color);
   }
   
@@ -570,6 +571,7 @@ img.icon-tec:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 
     transition: transform 0.3s ease;
 }
@@ -608,8 +610,61 @@ img.icon-tec:hover{
     
 }
 
+/* Dinamico */
 
+.container-janela{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 999; 
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.janela{
+    background-color: var(--janela);
+    width: 70vw;
+    min-width: 300px;
+    height: 40vh;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px var(--sombra-color); 
+}
+
+.closeButton{
+    width: 35px;
+    height: 40px;
+    font-size: 30px;
+    background-color: var(--surface-color2);
+    border: var(--destaque) solid 1px;
+    color: var(--color-padrao);
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.paragrafo-janela{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    
+
+}
 
 
 
@@ -744,6 +799,47 @@ ul#rodape-items li a:hover {
 
 
 /* Media queries */
+
+@media (min-width: 756px) {
+    * Dinamico */
+
+.container-janela{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 999; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.janela{
+    background-color: var(--janela);
+    width: 500px;
+}
+
+.closeButton{
+    width: 45px;
+    height: 50px;
+    font-size: 30px;
+}
+
+}
+
+@media (min-width: 700px) {
+    :root {
+      --bg-url: url(../img//bg-desktop.jpg);
+    }
+  
+    .light {
+      --bg-url: url(../img/bg-desktop-light.jpg);
+    }
+  }
 
 @media(max-width: 1126px){
     nav#navbar{
