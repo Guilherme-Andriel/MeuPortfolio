@@ -1,3 +1,6 @@
+const mode = document.querySelector("#switch button")
+
+
 function toggleMode() {
     const html = document.documentElement
 
@@ -8,3 +11,7 @@ function toggleMode() {
     }
 }
 
+
+mode.addEventListener("click", () =>{
+    toggleMode()
+})
