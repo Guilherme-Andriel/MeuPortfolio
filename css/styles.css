@@ -14,18 +14,19 @@
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(../img/moon-stars.svg);
     --color-switch: #ffffff;
+
     --surface-color2: #1b1a1a;
     --sombra-color: rgba(0, 0, 0, 0.5);
     --input-color: #ccc;
-    --preto1: #151515;
-    --preto2: #181818;
-    --preto3: #262626;
-    --preto4:#262626;
+    --cor-principal: #151515;
+    --cor-segundaria: #181818;
+    --cor-terciario: #262626;
+    --cor-projeto:#262626;
     --destaque: #787878;
     --janela: #2d2d2d;
 
     --roxo: #ad7ed6;
-    --roxo2: #c7a1e9;
+    --roxo-secundario: #c7a1e9;
     --gradient:  linear-gradient(315deg, #d71fef, #0083f5);
   }
   
@@ -42,15 +43,15 @@
     --surface-color2: rgba(35, 47, 53, 0.09);
     --sombra-color: rgba(0, 0, 0, 0.1);
     --input-color: #ccc;
-    --preto1: #fafaff;
-    --preto2: #f5f5f7;
-    --preto3: #e1e1e6;
-    --preto4:#201f1f;
+    --cor-principal: #fafaff;
+    --cor-segundaria: #f5f5f7;
+    --cor-terciario: #e1e1e6;
+    --cor-projeto:#201f1f;
     --destaque: #9c9999;
     --janela: #fafafa;
     
     --roxo: #ad7ed6;
-    --roxo2: #c7a1e9;
+    --roxo-secundario: #c7a1e9;
     --gradient:  linear-gradient(315deg, #d71fef, #0083f5);
   }
 
@@ -87,7 +88,7 @@ li{
 body{
     font-family: 'DM Sans', Geneva, Tahoma, sans-serif;
     color: var(--color-padrao);
-    background-color: var(--preto1);
+    background-color: var(--cor-principal);
     
    
 }
@@ -104,7 +105,7 @@ body{
 }
 
 header#cabecalho{
-    background-color:  var(--preto2); 
+    background-color:  var(--cor-segundaria); 
     height: 80px;
     width: 100%;
     display: flex;
@@ -123,7 +124,7 @@ header#cabecalho{
 }
 
 #logo:hover{
-    color: var(--roxo2);
+    color: var(--roxo-secundario);
 }
 
 .menu-flex{
@@ -268,7 +269,7 @@ header#cabecalho #navbar{
 }
 
 .btn:hover{
-    color: var(--preto4);
+    color: var(--cor-projeto);
     background: var(--surface-color-hover);
     border: 1.5px solid var(--color-padrao);
 }
@@ -311,7 +312,7 @@ header#cabecalho #navbar{
     content: '';
     position: absolute;
     inset: 6px;
-    background-color: var(--preto3);
+    background-color: var(--cor-terciario);
     border-radius: 50%;
     z-index: 1;
 
@@ -432,7 +433,7 @@ header#cabecalho #navbar{
 
 #habilidades{
     height: 90vh;
-    background-color: var(--preto2);
+    background-color: var(--cor-segundaria);
 
     display: flex;
     justify-content: center;
@@ -682,7 +683,7 @@ img.icon-tec:hover{
 #contato{
    height: 70vh;
     width: 100%;
-    background-color: var(--preto2);
+    background-color: var(--cor-segundaria);
 
     display: flex;
     justify-content: center;
@@ -860,7 +861,7 @@ ul#rodape-items li a:hover {
         height: 70px;
         bottom: 0;
         left: 0;
-        background-color: var(--preto2);
+        background-color: var(--cor-segundaria);
     
         display: flex;
         justify-content: center;
