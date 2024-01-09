@@ -578,7 +578,7 @@ img.icon-tec:hover{
 }
 
 #projetos #pj1{
-    background-image: url(../img/orcamento.png);
+    background-image: url(../img/pjtC++.png);
 }
 
 #projetos #pj2{
@@ -586,11 +586,19 @@ img.icon-tec:hover{
 }
 
 #projetos #pj3{
-    background-image: url(../img/iphone.png);
+    background-image: url(../img/orcamento.png);
 }
 
 #projetos #pj4{
-    background-image: url(../img/xmen.png);
+    background-image: url(../img/quiz.png);
+}
+
+#projetos #pj5{
+    background-image: url(../img/form.png);
+}
+
+#projetos #pj6{
+    background-image: url(../img/notes.png);
 }
 
 #projetos #pj1:hover, #projetos #pj2:hover, #projetos #pj3:hover, #projetos #pj4:hover, #projetos #pj5:hover, #projetos #pj6:hover{
